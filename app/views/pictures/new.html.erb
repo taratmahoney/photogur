@@ -1,7 +1,10 @@
 <h1> Add a new picture </h1>
 <%= link_to "Back to Pictures", pictures_url %>
 
-<%= form_for @picture do |f| %>
+
+<%= form_for @picture do |f| %> <!-- Friendlier, more helpful version of form_tag -->
+<! -- You create a form object with form_for that helps you build out your form - |f| is a form builder  -->
+
   <p>
     <%= f.label :artist %><br>
     <%= f.text_field :artist %>
